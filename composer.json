@@ -36,6 +36,12 @@
         }
     },
     "scripts": {
+        "compile": [
+            "echo '<?php return [...]; ' > config/app_local.php",
+            "chmod +x bin/cake",
+            "bin/cake migrations migrate --no-lock",
+            "bin/cake asset_compress build"
+        ],
         "post-install-cmd": "App\\Console\\Installer::postInstall",
         "post-create-project-cmd": "App\\Console\\Installer::postInstall",
         "check": [
