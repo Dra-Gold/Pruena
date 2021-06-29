@@ -102,8 +102,8 @@ create table clases_sedes
     FOREIGN KEY (id_sede) REFERENCES sedes(id)
 );
 
-insert into clases_sedes values (1,"2041-06-23","14::00:00","15:00:00",1,2);
-insert into clases_sedes values (2,"2029-06-23","15::00:00","16:00:00",2,1);
+insert into clases_sedes values (1,"2041-06-23","22:00:00","23:00:00",1,2);
+insert into clases_sedes values (2,"2029-06-23","22:00:00","23:00:00",2,1);
 
 create table alumnos_cursos_clases_sedes
 (
